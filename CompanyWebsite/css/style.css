@@ -1,0 +1,263 @@
+body{
+background-color: gray;
+margin: 0,auto;
+animation-name: runtwo;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+.container{
+    max-width: 1200px;
+    height: auto;
+    background-color: white;
+    margin: auto;
+}
+#header{
+    max-width: 1200px;
+    height: 80px;
+    background-color:lightblue;
+    animation-name: runone;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+#logo{
+	float:left;
+    padding-left: 45px;
+    padding-top: 15px;
+}
+#search{
+    float: right;
+    padding-right: 45px;
+    padding-top: 28px;
+}
+.clearfix{
+    clear: both;
+}
+.main-menu{
+    max-width: 100%;
+    height: 50px;
+    background-color:teal
+}
+.main-menu > ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    float: right;
+}
+.main-menu > ul > li{
+    display: inline-block;
+    padding: 6px;
+}
+.main-menu > ul > li > a{
+    color:white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-family: sans-serif;
+    font-size: medium;
+}
+.main-menu > ul > li > a:hover{
+    background-color: orange;
+}
+.drop-down{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    display: none;
+    z-index: 999;
+}
+.drop-down > li > a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    background-color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: medium;
+}
+.drop-down > li > a:hover{
+    background-color: orange;
+}
+.main-menu > ul > li:hover .drop-down{
+    display: block;
+}
+.banner{
+    width: 1200px;
+    height: 440px;
+    overflow: hidden;
+}
+.banner > img{
+    width: 100%;
+    height: 440px;
+}
+.content-header{
+    background-color: royalblue;
+    animation-name: runthree;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.content{
+    background-color: white;
+    padding: 25px;
+    width: 75%;
+    height: auto;
+    float: left;
+}
+.content h1{
+    font-weight: 15em;
+    font-family:sans-serif;
+}
+.content p{
+    font-size: small;
+    font-family: sans-serif;
+}
+.sidebar{
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    padding-left: 40px;
+    line-height: 1.2em;
+}
+.sidebar h1{
+    font-family: sans-serif;
+    color: white;
+}
+.sidebar ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.sidebar > ul > li > a{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    line-height: 1.5em;
+    font-style: italic;
+}
+.footer-menu{
+        max-width: 1200px;
+        height: auto;
+        background-color: black;
+}
+.foot{
+    max-width: 200px;
+    height: auto;
+    float: left;
+    padding:35px;
+}
+.foot h3{
+    color: white;
+}
+.foot address{
+    color: white;
+}
+.foot ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+.foot > ul > li >a{
+    text-decoration: none;
+    color: white;
+    line-height: 2em;
+}
+.copy{
+    width: 1160px;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: crimson;
+    color: white;
+    display: inline-block;
+}
+.copy p{
+    margin: 0px;
+}
+.content img{
+    max-width: 100%;
+}
+.product{
+    max-width: 278px;
+    height: auto;
+    float: left;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+.product-caption p{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.product-caption ins{
+    color: green;
+}
+.product-caption del{
+    color: red;
+}
+.product-caption a{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+.product-caption a:hover{
+    background-color: orange;
+}
+.banner iframe{
+    width: 100%;
+    height: 440px;
+}
+.contact{
+    padding-left:300px;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+.contact form{
+    line-height: 2em;
+}
+.contact form tr td input{
+    border-radius: 5px;
+    width: 225px;
+    height: 20px;
+}
+.contact form tr td textarea{
+    border-radius: 8px;
+}
+@keyframes runone{
+    from{
+        background-color: lightblue;
+    }
+    to{
+        background-color: lightcoral;
+    }
+}
+@keyframes runtwo{
+    from{
+        background-color:gray;
+    }
+    to{
+        background-color:white;
+    }
+}
+@keyframes runthree{
+    from{
+        background-color:royalblue;
+    }
+    to{
+        background-color:goldenrod;
+    }
+}
+.partnerimg{
+    width: 1180px;
+    height: auto;
+    padding: 10px;
+}
+.partnerimg img{
+    padding-left: 40px;
+    padding-right: 40px;
+}
